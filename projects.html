@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexandra | Projects</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Alexandra</a>
+
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="projects.html" class="active">Work</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== PROJECTS HEADER ==================== -->
+  <section class="section projects-header">
+    <div class="container">
+      <h1 class="fade-up">My Projects</h1>
+      <p class="lead fade-up delay-1">A collection of things I've built — from web apps to research tools.</p>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECT CARDS ==================== -->
+  <section class="section projects-list">
+    <div class="container">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #c4917b, #e8cec4);">
+            <span>AI</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>AI Interviewer</h3>
+          <p>
+            This app helps people practice for Java interviews. It picks
+            12 random questions at different difficulty levels, and then uses
+            GPT-4o to score the answers and give feedback. There's also a chat
+            feature where you can discuss your answers with an AI coach.
+          </p>
+          <div class="tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">GPT-4o</span>
+          </div>
+          <a href="https://github.com/alexandra-petcut/AI-Interviewer" target="_blank" class="btn project-btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reverse reveal">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #a8705a, #c4917b);">
+            <span>FT</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Fitness Activity Tracker</h3>
+          <p>
+            This was my most ambitious project — a full-stack fitness platform
+            with both a web and a mobile app. I used Next.js for the web side,
+            Expo for mobile, and Spring Boot for the backend analytics. Supabase
+            handles authentication and the database.
+          </p>
+          <div class="tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">Expo</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Supabase</span>
+          </div>
+          <a href="https://github.com/alexandra-petcut/Fitness-Activity-Tracking-API" target="_blank" class="btn project-btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #e8cec4, #c8b4dc);">
+            <span>TH</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Task & Habit Tracker</h3>
+          <p>
+            I wanted a simple app to organize my tasks and track habits, so I
+            built one myself. It works offline thanks to IndexedDB.
+          </p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Zustand</span>
+            <span class="tag">Vite</span>
+            <span class="tag">IndexedDB</span>
+          </div>
+          <a href="https://github.com/alexandra-petcut/Task-Habit-Tracker-PWA" target="_blank" class="btn project-btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card reverse reveal">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #b4d2c3, #e8cec4);">
+            <span>WS</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>WebScraper</h3>
+          <p>
+            This scraper collects job listings from Romanian platforms like
+            eJobs, BestJobs, and Hipo, all in one place. I used the Strategy
+            pattern so it's easy to add new sites later. The data gets stored
+            in a MySQL database running in Docker.
+          </p>
+          <div class="tags">
+            <span class="tag">Java</span>
+            <span class="tag">Maven</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Docker</span>
+          </div>
+          <a href="https://github.com/alexandra-petcut/Job-Market-Scraper" target="_blank" class="btn project-btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card reveal">
+        <div class="project-image">
+          <div class="project-placeholder" style="background: linear-gradient(135deg, #c8b4dc, #a8705a);">
+            <span>SI</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>System Identification</h3>
+          <p>
+            This was a university project where I worked with MATLAB to learn
+            about system identification. I implemented polynomial regression
+            for static systems and ARX models for dynamic ones. It was
+            challenging but really rewarding to see the math come together.
+          </p>
+          <div class="tags">
+            <span class="tag">MATLAB</span>
+            <span class="tag">Regression</span>
+            <span class="tag">ARX Models</span>
+          </div>
+          <a href="https://github.com/alexandra-petcut/System-Identification-Project" target="_blank" class="btn project-btn">View on GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="cta-banner reveal">
+    <div class="container cta-content">
+      <h2>Interested in working together?</h2>
+      <a href="index.html#contact" class="btn primary">Let's Talk</a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <p>Alexandra &mdash; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
